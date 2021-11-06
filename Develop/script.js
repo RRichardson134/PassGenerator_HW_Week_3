@@ -5,15 +5,32 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  const lengthofpassword = prompt ('Length of Password?');
 
   passwordText.value = password;
 
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword); {
+generateBtn.addEventListener("click", writePassword);
 
-let lengthofpassword = prompt ('Length of Password?');
+
+// function to generate password
+var generatePassword = function() {
+
+  const numChars = prompt ("Length of password?"); {
+
+  if (!isNaN(numChars) && numChars >= 8 && numChars <= 128 {
+
+  
+  
+  
+    var textArr = [];
+  
+    // let passwordText = ''; 
+
+  // for (i = 1; i <= numChars; i++) {
+
+
+  }
 
 }
